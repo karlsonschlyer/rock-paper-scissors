@@ -38,8 +38,21 @@
             }   else return "It's a tie. Play again!";
         }
 
+        function getPlayerInput () {
+            return prompt("Choose Rock, Paper, or Scissors.");
+        }
+
         function game() {
+            let playerScore = 0;
+            let computerScore = 0;
+
+            console.log("Player Score: " + playerScore = ". " + "Computer Score: " + computerScore + ". ")
+
+            let playerInput = getPlayerInput();
+            let computerSelection = getComputerChoice();
+
             
+            playRound(playerInput, computerSelection);
         }
 
         
